@@ -36,7 +36,7 @@ def chat():
         app.logger.debug(f"API URL: {api_url}")
 
         # Make a GET request to the external API with a timeout of 10 seconds
-        response = requests.get(api_url, timeout=10)
+        response = requests.get(api_url, timeout=100)
         app.logger.debug(f"API Response Status Code: {response.status_code}")
         app.logger.debug(f"API Response Text: {response.text}")
 
